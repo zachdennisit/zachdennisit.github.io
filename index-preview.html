@@ -23,7 +23,29 @@
   width: 40px;
   height: auto;
 }
-
+    .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+   .icon:hover {
+     opacity: 0.65;
+}
+    @media (max-width: 480px) {
+  .icon {
+    width: 32px;
+  }
+}
+  p {
+    margin-bottom: 1.25rem;
+}
+    @media (prefers-reduced-motion: reduce) {
+  .icon:hover {
+    opacity: 1;
+  }
+}
+    
   </style>
 
   <title>Zach Dennis | IT Portfolio</title>
@@ -39,27 +61,24 @@
       <a href="resume.html">Resume</a> ·
       <a href="projects.html">Projects</a> ·
       <a href="contact.html">Contact</a>
-    <div class="social">
+    </p>
+      
+  <div class="social">
   <a href="https://github.com/zachdennsit" target="_blank" rel="noopener">
-    <img
-      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.svg"
-      alt="GitHub"
-      class="icon"
-    >
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.svg"
+         alt="GitHub"
+         class="icon">
   </a>
 
   <a href="https://www.linkedin.com/in/zach-dennis-40b97492/" target="_blank" rel="noopener">
-    <img
-      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
-      alt="LinkedIn"
-      class="icon"
-    >
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+         alt="LinkedIn"
+         class="icon">
   </a>
 </div>
 
-    </p>
-  </main>
 
+  </main>
 </body>
 </html>
 

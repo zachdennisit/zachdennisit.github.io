@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      padding: 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .card {
+      text-align: left;
+      margin-top: 1rem;
+    }
+
+    .meta {
+      color: var(--pico-muted-color);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+
+  <title>Projects | Zach Dennis</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Projects</h1>
+      <p class="meta">Home lab + practical IT projects (resume-ready)</p>
+
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="about.html">About</a> ·
+        <a href="resume.html">Resume</a> ·
+        <a href="projects.html">Projects</a> ·
+        <a href="contact.html">Contact</a>
+      </p>
+    </header>
+
+    <article class="card">
+      <h2>Home Lab: Small Business IT Environment</h2>
+      <p class="meta">VirtualBox/VMware • Windows Server (trial) • Windows 11 VM</p>
+
+      <h3>What I built</h3>
+      <ul>
+        <li>Created a Windows domain and joined a Windows 11 client</li>
+        <li>Created users, groups, and basic role-based access</li>
+        <li>Practiced password resets, lockouts, and account enable/disable</li>
+        <li>Configured file shares and verified permissions by department</li>
+        <li>Basic troubleshooting (DNS/login/access issues)</li>
+      </ul>
+
+      <h3>Documentation</h3>
+      <ul>
+        <li>New user onboarding checklist</li>
+        <li>Password reset procedure</li>
+        <li>File access / permissions request steps</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Home Automation Lab</h2>
+      <p class="meta">Home Assistant (Docker) • Integrations • Troubleshooting</p>
+
+      <ul>
+        <li>Home Assistant in Docker + device integrations</li>
+        <li>Local DNS/ad blocking (AdGuard Home)</li>
+        <li>Basic maintenance: updates, backups, documentation</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Next Up</h2>
+      <ul>
+        <li>Linux basics lab (users, permissions, logs)</li>
+        <li>Cloud fundamentals lab (M365/Azure concepts)</li>
+        <li>Ticket-style writeups (issue → steps tried → fix)</li>
+      </ul>
+    </article>
+
+    <footer style="text-align:center; margin-top: 1.5rem;">
+      <small>© <span id="year"></span> Zach Dennis</small>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </main>
+</body>
+</html>
